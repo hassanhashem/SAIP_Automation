@@ -8,7 +8,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 public class DashboardPage 
 {
 	private static WebElement element = null;
-	//------------------------------------------------------------------------------------------------
+	//--------comment----------------------------------------------------------------------------------------
 	/*
 	public static WebElement  swlanguage (WebDriver driver ) 
 
