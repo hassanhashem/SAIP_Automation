@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="test.DashboardTCases">
+      <class name="test.AddRequeest">
         <methods>
-          <include name="teardown"/>
+          <include name="IPCL_Internallogin_AddRequest"/>
           <include name="Login"/>
-          <include name="Globalsearch"/>
+          <include name="teardown"/>
         </methods>
-      </class> <!-- test.DashboardTCases -->
+      </class> <!-- test.AddRequeest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

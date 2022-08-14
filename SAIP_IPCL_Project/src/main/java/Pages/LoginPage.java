@@ -8,22 +8,37 @@ public class LoginPage
 {
 	private static WebElement element = null;
 	//------------------------------------------------------------------------------------------------
-	public static WebElement  loginusername (WebDriver driver ) 
+	public static WebElement  Externaluserloginbutton (WebDriver driver ) 
 	{
-		element = driver.findElement(By.xpath("//*[@id=\"login_email\"]"));
+		element = driver.findElement(By.xpath("//*[@id=\"content\"]/div/div/div/div/div/div[1]/div[2]/div[2]/div/div/div/div/div/div/ul/li[2]/div/div/div/div/div/button"));
 		return element;		
 	}
 	
-	public static WebElement  loginpassword(WebDriver driver ) 
+	
+	public static WebElement  PressoUsername (WebDriver driver ) 
 	{
-		element = driver.findElement(By.xpath("//*[@id=\"login_password\"]"));
+		element = driver.findElement(By.xpath("//*[@id=\"username\"]"));
 		return element;		
 	}
 	
-	public static WebElement loginbutton(WebDriver driver ) 
+	public static WebElement  PressoPassword (WebDriver driver ) 
 	{
-		element = driver.findElement(By.xpath("//*[@id=\"root\"]/div/div[2]/div[2]/form/div[3]/div/div/span/button"));
+		element = driver.findElement(By.xpath("//*[@id=\"password\"]"));
 		return element;		
 	}
+	
+	public static WebElement  Pressologinbutton (WebDriver driver ) 
+	{
+		element = driver.findElement(By.xpath("//*[@id=\"kc-login\"]"));
+		return element;		
+	}
+	
+	public static WebElement  Internaluserloginbutton (WebDriver driver ) 
+	{
+		element = driver.findElement(By.xpath("//li[1]//div[1]//div[1]//div[1]//div[1]//div[1]//button[1]"));
+		return element;		
+	}
+	
+	
 	
 }
