@@ -11,7 +11,7 @@ import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
-import Pages.LandingPage;
+import Pages.Ext_LandingPage;
 import Pages.LoginPage;
 import io.github.bonigarcia.wdm.WebDriverManager;
 //------------------------------------------------------start of test-----------------------------------------------------------
@@ -44,22 +44,24 @@ public class IPCL_Ext_AddRequest {
 		LoginPage.PressoUsername(driver).sendKeys("sap1010122222");
 		LoginPage.PressoPassword(driver).sendKeys("Saip@1234");
 		LoginPage.Pressologinbutton(driver).click();
-		LandingPage.NewRequestbutton(driver).click();
-		Select drpArea = new Select(LandingPage.Area(driver));
+		Ext_LandingPage.NewRequestbutton(driver).click();
+		Select drpArea = new Select(Ext_LandingPage.Area(driver));
 		drpArea.selectByVisibleText("عسير");
-		LandingPage.ApplicantType(driver).click();
-		Select drRequiredService = new Select(LandingPage.Domain(driver));
+		Ext_LandingPage.ApplicantType(driver).click();
+		Select drRequiredService = new Select(Ext_LandingPage.Domain(driver));
 		drRequiredService.selectByVisibleText("حقوق المولف");
-		Select drDomain = new Select(LandingPage.RequiredService(driver));
+		Select drDomain = new Select(Ext_LandingPage.RequiredService(driver));
 		drDomain.selectByVisibleText("اختبار");
-		LandingPage.Inquiry(driver).sendKeys("اختبار");
-		LandingPage.Sendrequest(driver).click();
+		Ext_LandingPage.Inquiry(driver).sendKeys("اختبار");
+		Ext_LandingPage.Sendrequest(driver).click();
+		Ext_LandingPage.RequestcreationconfirmationButton(driver).click();
+		
 	}
 	// -------------------------------------------------End ofTest------------------------------------------------
 	@AfterTest()
 	public void teardown() {
-		driver.close();
-		extent.flush();
-		Browser.close();
+		//driver.close();
+		//extent.flush();
+		//Browser.close();
 	}
 }

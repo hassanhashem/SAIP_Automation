@@ -10,6 +10,8 @@ import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
+
+import Pages.Int_LandingPage;
 import Pages.LoginPage;
 import io.github.bonigarcia.wdm.WebDriverManager;
 //------------------------------------------------------start of test-----------------------------------------------------------
@@ -41,6 +43,11 @@ public class IPCL_Int_AcceptRequest {
 		LoginPage.PressoUsername(driver).sendKeys("hhashem.c");
 		LoginPage.PressoPassword(driver).sendKeys("SaipEmail@2022");
 		LoginPage.Pressologinbutton(driver).click();
+		Int_LandingPage.RequestDetailsbutton(driver).click();
+		Int_LandingPage.RequestActionsList(driver).click();
+		Int_LandingPage.AcceptRequestoption(driver).click();
+		Int_LandingPage.AcceptRequestconfirmation_Yes(driver).click();
+		Int_LandingPage.AcceptRequestconfirmationMsgyesButton(driver).click();
 		
 	}
 	// -------------------------------------------------End ofTest------------------------------------------------
