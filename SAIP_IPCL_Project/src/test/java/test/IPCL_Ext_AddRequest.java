@@ -2,6 +2,7 @@ package test;
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.devtools.v100.browser.Browser;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
@@ -19,7 +20,7 @@ public class IPCL_Ext_AddRequest {
 	ExtentSparkReporter spark;
 	ExtentReports extent;
 	@BeforeTest
-	public void Login() throws InterruptedException {
+	public void Ext_Login() throws InterruptedException {
 		// Reports
 		spark = new ExtentSparkReporter("IPCL_AddRequest_Report.html");
 		extent = new ExtentReports();
@@ -57,8 +58,8 @@ public class IPCL_Ext_AddRequest {
 	// -------------------------------------------------End ofTest------------------------------------------------
 	@AfterTest()
 	public void teardown() {
-		//driver.close();
-		//extent.flush();
-		//Browser.close();
+		driver.close();
+		extent.flush();
+		Browser.close();
 	}
 }

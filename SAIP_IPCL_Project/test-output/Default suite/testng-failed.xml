@@ -3,13 +3,20 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="test.AddRequeest">
+      <class name="test.IPCL_Ext_AddRequest">
         <methods>
-          <include name="IPCL_Internallogin_AddRequest"/>
-          <include name="Login"/>
+          <include name="Ext_Login"/>
           <include name="teardown"/>
+          <include name="IPCL_Externallogin_AddRequest"/>
         </methods>
-      </class> <!-- test.AddRequeest -->
+      </class> <!-- test.IPCL_Ext_AddRequest -->
+      <class name="test.IPCL_Int_AcceptRequest">
+        <methods>
+          <include name="teardown"/>
+          <include name="IPCL_IPCL_Int_AcceptRequest"/>
+          <include name="Int_Login"/>
+        </methods>
+      </class> <!-- test.IPCL_Int_AcceptRequest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
