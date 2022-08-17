@@ -8,11 +8,41 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">26,660</td><td></td><td></td></tr>
+<tr><th colspan="8">IPCL_AddRequest_Suite</th></tr>
+<tr><td><a href="#t0">Step1_Add Request by External user</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">35,501</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">Step2_Accept Request by Operation Team</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">40,135</td><td></td><td></td></tr>
+<tr><td><a href="#t2">Step3_Appointment reservation by external user</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">40,128</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">2</th><th class="num">0</th><th class="num">0</th><th class="num attn">1</th><th class="num">115,764</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">test.IPCL_Ext_AddRequest</td><td><a href="#m0">IPCL_Externallogin_AddRequest</a></td><td rowspan="1">1660663823241</td><td rowspan="1">23312</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">IPCL_AddRequest_Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Step1_Add Request by External user &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">test.IPCL_Ext_AddRequest</td><td><a href="#m0">IPCL_Externallogin_AddRequest</a></td><td rowspan="1">1660741133034</td><td rowspan="1">31231</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">Step2_Accept Request by Operation Team &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">test.IPCL_Int_AcceptRequest</td><td><a href="#m1">IPCL_IPCL_Int_AcceptRequest</a></td><td rowspan="1">1660741165465</td><td rowspan="1">38549</td></tr></tbody>
+<tbody id="t2"><tr><th colspan="4">Step3_Appointment reservation by external user &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">test.IPCL_Ext_MakeAnAppointment</td><td><a href="#m2">IPCL_Externallogin_MakeAnAppointment</a></td><td rowspan="1">1660741205604</td><td rowspan="1">38940</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">test.IPCL_Ext_AddRequest#IPCL_Externallogin_AddRequest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Step1_Add Request by External user</h2><h3 id="m0">test.IPCL_Ext_AddRequest#IPCL_Externallogin_AddRequest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Step2_Accept Request by Operation Team</h2><h3 id="m1">test.IPCL_Int_AcceptRequest#IPCL_IPCL_Int_AcceptRequest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Step3_Appointment reservation by external user</h2><h3 id="m2">test.IPCL_Ext_MakeAnAppointment#IPCL_Externallogin_MakeAnAppointment</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//body/div[@data-focus-capturing=&apos;non-modal&apos;]/div/div[@data-mx-placeholder=&apos;main&apos;]/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/button[1]&quot;}
+  (Session info: chrome=104.0.5112.82)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.2.2&apos;, revision: &apos;683ccb65d6&apos;
+System info: host: &apos;HASSANHASHEMLAP&apos;, ip: &apos;10.0.100.139&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [599f9b6b1b57f30e01035223730ea91e, findElement {using=xpath, value=//body/div[@data-focus-capturing=&apos;non-modal&apos;]/div/div[@data-mx-placeholder=&apos;main&apos;]/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/button[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.82, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:60614}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60614/devtoo..., se:cdpVersion: 104.0.5112.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 599f9b6b1b57f30e01035223730ea91e
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:588)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:406)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:398)
+	at Pages.Ext_LandingPage.MaekAppointmentButton1(Ext_LandingPage.java:85)
+	at test.IPCL_Ext_MakeAnAppointment.IPCL_Externallogin_MakeAnAppointment(IPCL_Ext_MakeAnAppointment.java:48)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

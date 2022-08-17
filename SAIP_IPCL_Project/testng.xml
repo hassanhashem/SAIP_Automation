@@ -1,14 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="IPCL_AddRequest_Suite">
-	<test parallel="false" name="IPCL_Ext_AddRequest" thread-count="1">
+	<test parallel="false" name="Step1_Add Request by External user" thread-count="1">
 		<classes>
 			<class name="test.IPCL_Ext_AddRequest" />
 		</classes>
 	</test>
-	<test parallel="false" name="IPCL_Int_AcceptRequest" thread-count="1">
+	<test parallel="false" name="Step2_Accept Request by Operation Team" thread-count="1">
 		<classes>
 			<class name="test.IPCL_Int_AcceptRequest" />
+		</classes>
+	</test>
+	<test parallel="false" name="Step3_Appointment reservation by external user" thread-count="1">
+		<classes>
+			<class name="test.IPCL_Ext_MakeAnAppointment" />
 		</classes>
 	</test>
 </suite>

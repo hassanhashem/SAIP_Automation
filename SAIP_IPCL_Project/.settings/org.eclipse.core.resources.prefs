@@ -2,4 +2,5 @@ eclipse.preferences.version=1
 encoding//src/main/java/Pages/Ext_LandingPage.java=UTF-8
 encoding//src/main/java/Pages/Int_LandingPage.java=UTF-8
 encoding//src/test/java/test/IPCL_Ext_AddRequest.java=UTF-8
+encoding//src/test/java/test/IPCL_Ext_MakeAnAppointment.java=UTF-8
 encoding//src/test/java/test/IPCL_Int_AcceptRequest.java=UTF-8

@@ -66,44 +66,50 @@ public class Ext_LandingPage {
 		element = driver.findElement(By.xpath("//button[2]"));
 		return element;
 	}
+
 	// ------------------------------------------------------------------------------------------------
-			public static WebElement RequestcreationconfirmationButton(WebDriver driver)
-			{
-				element = driver.findElement(By.xpath("//button[contains(text(),'نعم')]"));
-				return element;
-			}
+	public static WebElement RequestcreationconfirmationButton(WebDriver driver) {
+		element = driver.findElement(By.xpath("//button[contains(text(),'نعم')]"));
+		return element;
+	}
+
+	// ------------------------------------------------------------------------------------------------
+	public static WebElement RequestDetailsButton(WebDriver driver) {
+		element = driver.findElement(By.xpath(
+				"//body[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[3]/div[1]/div[1]/div[4]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[2]/div[6]/button[1]/img[1]"));
+		return element;
+	}
+
+	// ------------------------------------------------------------------------------------------------
+	public static WebElement MaekAppointmentButton1(WebDriver driver) {
+		element = driver.findElement(By.xpath(
+				"//body/div[@data-focus-capturing='non-modal']/div/div[@data-mx-placeholder='main']/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/button[1]"));
+		return element;
+	}
 
 	
-			
-	
-	
-	
-	
-	
-	
 	// ------------------------------------------------------------------------------------------------
-		public static WebElement RequestDetailsButton(WebDriver driver)
-		{
-			element = driver.findElement(By.xpath("//body[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[3]/div[1]/div[1]/div[4]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[2]/div[6]/button[1]/img[1]"));
-			return element;
-		}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	public static WebElement MaekAppointmentconfirmationMsgyesbutton(WebDriver driver) {
+		element = driver.findElement(By.xpath("// button[contains(text(),'نعم')]"));
+		return element;
+	}
+
+	// ------------------------------------------------------------------------------------------------
+	public static WebElement weekday(WebDriver driver) {
+		element = driver.findElement(By.xpath("//*[contains(text(),'الخميس')]"));
+		return element;
+	}
+
+	// ------------------------------------------------------------------------------------------------
+	public static WebElement MaekAppointmentButton2(WebDriver driver) {
+		element = driver.findElement(By.xpath("//button[@type='button']"));
+		return element;
+	}
+
+	// ------------------------------------------------------------------------------------------------
+	public static WebElement AppointmentreservationconfirmationButton(WebDriver driver) {
+		element = driver.findElement(By.xpath("// body//div[@role='dialog']//div//div//div//button[1]"));
+		return element;
+	}
+
 }
